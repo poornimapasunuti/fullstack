@@ -1,0 +1,26 @@
+button {
+    width: 150px;
+    height: 50px;
+    background-color: blue;
+    color: white;
+}
+
+header {
+    width: 100px;
+    text-align: center;
+    
+}
+
+.danger {
+    background-color: red;
+
+}
+#success {
+    background-color: green;
+}
+.hero {
+    height: 100%;
+    width: 500px;
+    background-color: aqua;
+    background-image: url("wallpaper.jpg");
+}
