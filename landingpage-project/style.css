@@ -1,0 +1,174 @@
+:root {
+  --primary: #8a2be2;
+  --primary-soft: #f4e6ff;
+  --accent: #ff8fb1;
+  --bg: #fff8fb;
+  --text: #2d2d35;
+}
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+  color: var(--text);
+  background: var(--bg);
+}
+
+.navbar {
+  background: rgb(0, 0, 0);
+  position: sticky;
+  top: 0;
+  z-index: 1050;
+}
+
+.navbar-brand {
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: #fff;
+}
+
+.navbar .nav-link {
+  color: rgba(255, 255, 255, 0.9);
+  font-weight: 500;
+}
+
+.navbar .nav-link:hover,
+.navbar .nav-link.active {
+  color: #ffccd9;
+}
+
+.contact-btn {
+  border-color: rgba(255, 255, 255, 0.75);
+}
+
+.hero-section {
+  min-height: 88vh;
+  padding: 4rem 0;
+  background: linear-gradient(135deg, rgba(53, 50, 56, 0.7), rgba(48, 45, 46, 0.7)), url('assets/hero.jpeg') top/cover no-repeat;
+  position: relative;
+}
+
+.hero-section::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: rgba(16, 10, 26, 0.46);
+}
+
+.hero-section > .container {
+  position: relative;
+  z-index: 1;
+}
+
+.eyebrow {
+  letter-spacing: 0.18em;
+  font-size: 0.85rem;
+  opacity: 0.9;
+}
+
+.hero-section .lead {
+  max-width: 680px;
+  margin: 0 auto 1.5rem;
+}
+
+.service-card {
+  background: white;
+  border: 1px solid rgba(145, 84, 255, 0.12);
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.service-card .icon {
+  width: 3.5rem;
+  height: 3.5rem;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 1rem;
+  background: var(--primary-soft);
+  color: var(--primary);
+  font-size: 1.6rem;
+}
+
+.section-label {
+  color: var(--primary);
+  font-weight: 700;
+  letter-spacing: 0.15em;
+}
+
+.custom-checks li {
+  margin-bottom: 0.85rem;
+  color: #4c4c5d;
+}
+
+.custom-checks li::before {
+  content: '•';
+  color: var(--primary);
+  display: inline-block;
+  width: 1.2rem;
+}
+
+.feature-card {
+  min-height: 260px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.portfolio-card {
+  background: white;
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.portfolio-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 22px 45px rgba(45, 45, 53, 0.12);
+}
+
+.portfolio-img {
+  aspect-ratio: 4 / 3;
+  background-size: cover;
+  background-position: center;
+}
+
+.portfolio-img.blouse {
+  background-image: url('assets/blouse.webp');
+}
+
+.portfolio-img.embroidery {
+  background-image: url('assets/embroidery.jpg');
+}
+
+.portfolio-img.lehenga {
+  background-image: url('assets/lehenga.webp');
+}
+
+.portfolio-img.kidswear {
+  background-image: url('assets/kidswear.jfif');
+}
+
+.boutique-cta {
+  background: linear-gradient(135deg, rgba(138, 43, 226, 0.92), rgba(255, 143, 177, 0.92));
+}
+
+.contact-form {
+  border: 1px solid rgba(138, 43, 226, 0.15);
+}
+
+.contact-info li {
+  margin-bottom: 0.75rem;
+}
+
+footer {
+  background: #fff;
+}
+
+@media (max-width: 768px) {
+  .hero-section {
+    min-height: 70vh;
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+  }
+}
